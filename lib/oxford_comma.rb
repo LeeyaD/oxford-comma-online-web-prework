@@ -4,7 +4,9 @@ def oxford_comma(array) #takes an argument array of string elements and converts
   case
   when array.length == 1 # 1-element array returns string w/ no formatting
     array.join
-  when array.length == 2 #2-element array returns 'and' between then, single space on either side
+  when array.length == 2 #2-element array returns 'and' between them, single space on either side
+    array[0] << " and"
+    array.join(" ")
   when array.length >= 3 # 3-element+ array returns returns commas plus final 'and'
 
   end
