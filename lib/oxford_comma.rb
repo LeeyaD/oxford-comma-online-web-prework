@@ -8,7 +8,7 @@ def oxford_comma(array) #takes an argument array of string elements and converts
     array[0] << " and"
     array.join(" ")
   when array.length >= 3 # 3-element+ array returns returns commas plus final 'and'
-
+    array[array.length - 2] << ", and"
   end
 end
 # call #join on array to convert array to one long string
