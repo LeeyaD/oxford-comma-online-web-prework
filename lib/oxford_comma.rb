@@ -12,8 +12,8 @@ def oxford_comma(array) #takes an argument array of string elements and converts
       part << ","
     end
     new_array[new_array.length - 2] << " and"
-    new_a = new_array.join(" ")
-    new_a.last.chop
+    #new_a = new_array.join(" ")
+    new_a.chop
   end
 end
 # call #join on array to convert array to one long string
